@@ -1,31 +1,15 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+bin/
+build/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Dolphin
+.directory
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Visual Studio Code
+.vscode/
 
-# Fortran module files
-*.mod
-*.smod
+# Kdevelop
+*.kdev4
+.kdev4/
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-3rdparty
+# Qt Creator
+CMakeLists.txt.user

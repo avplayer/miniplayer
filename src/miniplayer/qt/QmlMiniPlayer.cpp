@@ -35,7 +35,7 @@ void QmlMiniPlayer::uninit()
 void QmlMiniPlayer::registerVideoSurface(QmlVideoSurface* videoSurface)
 {
     qDebug() << __FUNCTION__;
-    auto & iter =  std::find(mAttachedSurfaces.begin(), mAttachedSurfaces.end(), videoSurface);
+    const auto & iter =  std::find(mAttachedSurfaces.begin(), mAttachedSurfaces.end(), videoSurface);
     if(iter != mAttachedSurfaces.end())
         return;
     mAttachedSurfaces.push_back(videoSurface);
@@ -44,7 +44,7 @@ void QmlMiniPlayer::registerVideoSurface(QmlVideoSurface* videoSurface)
 void QmlMiniPlayer::unregisterVideoSurface(QmlVideoSurface* videoSurface)
 {
     qDebug() << __FUNCTION__;
-    auto & iter =  std::find(mAttachedSurfaces.begin(), mAttachedSurfaces.end(), videoSurface);
+    const auto & iter =  std::find(mAttachedSurfaces.begin(), mAttachedSurfaces.end(), videoSurface);
     mAttachedSurfaces.erase(iter);
 }
 

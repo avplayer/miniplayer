@@ -1,4 +1,6 @@
 #include "AudioOutputOpenAL.hpp"
+#include <memory>
+#include <thread>
 #include <QDebug>
 
 std::mutex AudioOutputOpenAL::globalMutex;
