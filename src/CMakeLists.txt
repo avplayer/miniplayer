@@ -1,3 +1,4 @@
+include_directories(${FFMPEG_INCLUDE_DIR})
 include_directories(${OPENAL_INCLUDE_DIR})
 
 qt5_add_resources(QRC_FILE ../miniplayer.qrc)
